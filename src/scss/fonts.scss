@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Arsenal:wght@400;700&family=Roboto:wght@300;400;700;900&display=swap');
+//font-family: 'Arsenal', sans-serif;
+//font-family: 'Roboto', sans-serif;
+
+@font-face {
+    font-family: 'Century Gothic';
+    src: local('Century Gothic Bold'), local('Futura-New-Bold-Reg'),
+        url('/fonts/Gotic/Century-Gothic.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Futura New';
+    src: local('Futura New Bold Reg'), local('Futura-New-Bold-Reg'),
+        url('/fonts/FuturaNewBold-Reg/FuturaNewBold-Reg.woff2') format('woff2'),
+        url('/fonts/FuturaNewBold-Reg/FuturaNewBold-Reg.woff') format('woff'),
+        url('/fonts/FuturaNewBold-Reg/FuturaNewBold-Reg.ttf') format('truetype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+

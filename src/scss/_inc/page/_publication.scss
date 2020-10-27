@@ -1,0 +1,37 @@
+.publication{
+    margin-bottom: 50px;
+    .container{
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+    .slider-item{
+        display: flex;
+        flex-direction: column;
+        min-width: unset;
+        max-width: unset;
+        margin-right: 50px;
+        width: calc(33.3% - 34px);
+        &:nth-child(3n){
+            margin-right: 0px;
+        }
+        .slider-img{
+            height: 100%;
+            .img-wrapper{
+                transition-duration: 1s;
+                filter: grayscale(1);
+            }
+            a{
+                opacity: 0;
+            }
+            &:hover{
+                .img-wrapper{
+                    filter: none;
+                }
+                a{
+                    opacity: 0;
+                }
+            }
+        }
+    }
+}

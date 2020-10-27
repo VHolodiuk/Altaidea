@@ -1,0 +1,35 @@
+<% var data = {
+    title: "Contact | ALTA IDEA",
+    logo: ""
+  }; %>
+<%= _.template(require('./../includes/header.html').default)(data) %>
+
+<section class="character">
+  <div class="container">
+    <ul class="character-wrapper">
+      <li class="character-item"><a href=""> <img src="../../img/svg/mail.svg" alt=""> julia.altaidea@gmail.com</a></li>
+      <li class="character-item"><a href=""><img src="../../img/svg/phone.svg" alt=""> +38 066 232 7878</a> </li>
+      <li class="character-item"><a href=""><img src="../../img/svg/mapB.svg" alt=""> ул. Деловая 1/2 02000 Киев,
+          Украина</a> </li>
+    </ul>
+  </div>
+</section>
+
+<form action="">
+  <section class="form">
+    <div class="container">
+      <div class="form-wrapper">
+        <h2 class="form-title">
+          Оформить запрос
+        </h2>
+        <input type="text" class="input" placeholder="Имя Фамилия*">
+        <input type="mail" class="input" placeholder="Email*">
+        <input type="phone" class="input" placeholder="Телефон">
+        <textarea name="" id="" class="input" placeholder="Сообщение"></textarea>
+        <button class="form-btn">Отправить</button>
+      </div>
+    </div>
+  </section>
+</form>
+
+<%= _.template(require('./../includes/footer.html').default)(data) %>

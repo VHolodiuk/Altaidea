@@ -1,0 +1,112 @@
+.character {
+    .container {
+        display: flex;
+
+        .character-wrapper {
+            margin-bottom: 50px;
+
+            .character-item {
+                padding: 0 10px;
+                &:nth-child(2){
+                    padding-left: 66px;
+                }
+            }
+
+            a {
+                font-weight: normal;
+                text-transform: capitalize;
+                transition: all 0.3s linear 0s;
+                opacity: 1;
+
+                &:hover {
+                    transition: all 0.3s linear 0s;
+                    opacity: 0.5;
+                }
+            }
+
+            &>:first-child {
+                a {
+                    text-transform: lowercase;
+                }
+            }
+        }
+    }
+}
+
+.form {
+    margin-bottom: 100px;
+
+    .container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .form-wrapper {
+        width: 400px;
+        background: #F7F7F7;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 30px 40px;
+
+        .form-title {
+            @include subTitle;
+            text-align: center;
+            margin-bottom: 40px;
+            font-size: 15px;
+            line-height: 18px;
+        }
+        .text{
+            text-align: center;
+            color: $greyList;
+        }
+
+        .input {
+            //@include subTitle;
+            font-family: $sub-font;
+            font-weight: normal;
+            font-style: normal;
+            font-size: 11px;
+            line-height: 13px;
+            border: none;
+            background: none;
+            border-bottom: 1px solid #EAEAEA;
+            margin-bottom: 30px;
+            padding-bottom: 5px;
+            width: 100%;
+            text-transform: capitalize;
+
+            &::placeholder {
+                color: $greyList;
+            }
+        }
+
+        textarea {
+            min-height: 19px;
+            height: auto;
+            resize: none;
+            -moz-appearance: none;
+            -webkit-appearance: none;
+            appearance: none;
+        }
+
+        .form-btn {
+            @include subTitle;
+            border-radius: 3px;
+            font-size: 14px;
+            line-height: 16px;
+            background: none;
+            padding: 12px 40px;
+            width: max-content;
+            border-radius: 1px;
+            border-color: $contactBtn;
+            border: 1px solid $contactBtn;
+            transition-duration: 1s;
+            &:hover {
+                background: $contactBtn;
+                color: $white;
+            }
+        }
+    }
+}

@@ -1,0 +1,40 @@
+@import "fonts";
+// @import "libs";
+@import "_aos";
+@import "_vars";
+@import "_mixin";
+@import "normalize";
+@import "_base";
+//---------------
+
+//--sections
+@import "_inc/section/_header";
+
+@import "_inc/section/_slogan";
+
+@import "_inc/section/_breadcrumbs";
+
+@import "_inc/section/_footer";
+
+@import "_inc/section/sliders-item";
+
+@import "_inc/section/galery";
+
+//---pages
+@import "_inc/page/_home";
+
+@import "_inc/page/_aboutUs";
+
+@import "_inc/page/_directions";
+
+@import "_inc/page/_publication";
+
+@import "_inc/page/_proect";
+
+@import "_inc/page/_news";
+
+@import "_inc/page/_article";
+
+@import "_inc/page/_contact";
+
+@import "_media" // Всегда в конце;

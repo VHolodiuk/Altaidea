@@ -1,0 +1,28 @@
+@mixin basikText {
+  font-family: $default-font;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+@mixin title {
+  font-family: $title-font;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 29px;
+  line-height: 36px;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+@mixin subTitle {
+  font-family: $sub-font;
+  font-weight: normal;
+  font-style: normal;
+  font-size: 13px;
+  line-height: 15px;
+  text-transform: uppercase;
+  user-select: none;
+}

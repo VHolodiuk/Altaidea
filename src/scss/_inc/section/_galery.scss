@@ -1,0 +1,90 @@
+.galery{
+    margin-bottom: 200px;
+    .container{
+        .galery-wrapper{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            margin-bottom: 35px;
+            .galery-item{
+                position: relative;
+                max-height: 400px;
+                background: rgba($color: $black, $alpha: .5) ;
+                margin-right: 10px;
+                margin-bottom: 10px;
+                width: calc(33.3% - 7px);
+                
+                &:nth-child(3n){
+                    margin-right: 0px;
+                }
+
+                &:nth-child(5),
+                &:nth-child(11),
+                &:nth-child(17),
+                &:nth-child(23)
+                {
+                    width: calc(15% - 7px);
+                }
+                &:nth-child(4),
+                &:nth-child(10),
+                &:nth-child(16),
+                &:nth-child(22), 
+                &:nth-child(6),
+                &:nth-child(12),
+                &:nth-child(18),
+                &:nth-child(24){
+                    width: calc(42.5% - 7px);
+                }
+                
+                &:hover{
+                    .content{
+                        opacity: 1;
+                    }
+                }
+                img{
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+                .content{
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    position: absolute;
+                    top: 0px;
+                    left: 0px;
+                    width: 100%;
+                    height: 100%;
+                    background: rgba($color: $black, $alpha: .5);
+                    opacity: 0;
+                    color: $white;
+                    font-family: $sub-font;
+                    font-weight: normal;
+                    font-size: 18px;
+                    line-height: 21px;
+                    text-transform: uppercase;
+                    transition-duration: 1s;
+                }
+                // .galery-first{
+                //     font-weight: normal !important;
+                // }
+            }
+
+        }
+        .galery-button{
+            display: flex;
+            justify-content: flex-end;
+            a{
+                @include subTitle;
+                font-weight: 900;
+                font-size: 11px;
+                line-height: 13px;
+                color: $greyL;
+                &:hover{
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+

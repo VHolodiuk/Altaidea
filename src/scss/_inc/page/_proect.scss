@@ -1,0 +1,112 @@
+.proect{
+    margin-bottom: 40px;
+    .container{
+        .title-prev{
+            .sub-title{
+                width: 358px;
+                top: 356px;
+            }
+        }
+        .wrapper-prev{
+            margin-bottom: 100px;
+            width: 100%;
+            .text-wrapper{
+                width: 30%;
+                .text{
+                    align-items: center;
+                    margin-top: unset;
+                }
+            }
+            .img-wrapper{
+                width: 70%;
+            }
+        }
+        .prev-text{
+            display: flex;
+            justify-content: space-between;
+            transition-duration: 1s;
+            p{
+                width: calc(50% - 30px);
+                color: $grey;
+            }
+        }
+        .readMore{
+            display: flex;
+            .AboutBtnText{
+                margin-top: 20px;
+            }
+            .opacityBlock{
+                display: none;
+            }
+        }
+        .proect-button{
+            display: flex;
+            justify-content: flex-end;
+            margin-left: auto;
+            a{
+                @include subTitle;
+                font-weight: 900;
+                font-size: 11px;
+                line-height: 13px;
+                color: $greyL;
+                &:hover{
+                    color: $black;
+                }
+            }
+        }
+    }
+}
+
+.galeries{
+    margin-bottom: 50px;
+    .container{
+        img{
+            width: 100%;
+            height: auto;
+            margin-bottom: 30px;
+        }
+    }
+}
+
+.plans{
+    margin-bottom: 100px;
+    .container{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .plan-item{
+            margin-bottom: 30px;
+            width: calc(33.3% - 87px);
+            margin-right: 130px;
+            &:last-child{
+                margin-right: 0px;
+            }
+            .plan-title{
+                @include subTitle;
+                color: $greyList;
+                margin-bottom: 15px;
+            }
+            .plan-img{
+                img{
+                    width: 100%;
+                }
+            }
+        }
+    }
+}
+
+.more-proect{
+    margin-bottom: 100px;
+    .projects-wrapper{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        .slider-item{
+            width: 530px;
+            margin-bottom: 20px;
+            .slider-img{
+                height: 300px;
+            }
+        }
+    }
+}
